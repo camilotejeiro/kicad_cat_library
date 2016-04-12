@@ -1,0 +1,32 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C_NPOL_EUR
+D Capacitor Non-Polarized EUR
+$ENDCMP
+#
+$CMP C_NPOL_US
+D Capacitor Non-Polarized US
+$ENDCMP
+#
+$CMP C_POL_EUR
+D Capacitor Polarized EUR
+$ENDCMP
+#
+$CMP C_POL_US
+D Capacitor Polarized US
+$ENDCMP
+#
+$CMP L
+D Inductor
+$ENDCMP
+#
+$CMP R_EUR
+D Resistor EUR
+K R DEV
+$ENDCMP
+#
+$CMP R_US
+D Resistor US
+$ENDCMP
+#
+#End Doc Library
