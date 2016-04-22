@@ -1,18 +1,16 @@
 Camilo KiCad Library Conventions
 ==========================
 
-*First and Foremost:*
+_First and Foremost:_
 [Regarding KiCad Library Management – No Complaints](https://camilotejeiro.wordpress.com/2016/04/21/regarding-kicad-library-management-no-complaints/)
 
-*These are largely based on the KiCad Library Conventions with some minor 
-changes based on my experience (completely personal choices and these 
-**will** change).*
+_These are largely based on the KiCad Library Conventions with some minor 
+changes based on my experience (completely personal choices and these **will** change)._
 
 ## Kicad Schematic Sizes
 ---
 
-*Keep them in Imperial units: KiCad Eeschema only has support for 
-imperial units.*
+_Keep them in Imperial units: KiCad Eeschema only has support for imperial units._
 
 * Pin width (default wire size):        0.006 inches (6 mils)
 
@@ -38,17 +36,17 @@ imperial units.*
 * text fields clearance (edge to edge): 0.01 inches (10 mils)  
     15 mils center to edge of text field.
 
-Also make sure you align the Field text accordingly so that when it 
-expands it doesnt overlap with the symbol.
+Also make sure you align the Field text accordingly so that when it expands 
+it doesnt overlap with the symbol.
 
 ## Kicad Schematic Naming Conventions
 ---
 
 **Abreviations all caps, otherwise only first letter uppercase.**
 
-*We are not using lower case only, because symbol, land pattern and 3d 
+_We are not using lower case only, because symbol, land pattern and 3d 
 model names follow the convention already, so lets stick to it, 
-we'll see.*
+we'll see._
 
 ### Library names (sticking to KLC)
 
@@ -71,8 +69,8 @@ we'll see.*
 ## Kicad Land Pattern Creation Steps (Requirements)
 ---
 
-*For specific SMD Chip IPC compliant numbers please refer to your 
-calculator tool and use those results*
+_For specific SMD Chip IPC compliant numbers please refer to your 
+calculator tool and use those results_
 
 **These are our generic requirements for manufacturer specific parts.**
 
@@ -114,9 +112,9 @@ calculator tool and use those results*
 
 **Abreviations all caps, otherwise only first letter uppercase.**
 
-*We are not using lower case only, because symbol, land pattern and 3d 
+_We are not using lower case only, because symbol, land pattern and 3d 
 model names follow the convention already, so lets stick to it, 
-we'll see.*
+we'll see._
 
 ### Library names (sticking to KLC)
 
