@@ -2,10 +2,12 @@ Camilo KiCad Library Conventions
 ==========================
 
 _First and Foremost:_
-[Regarding KiCad Library Management – No Complaints](https://camilotejeiro.wordpress.com/2016/04/21/regarding-kicad-library-management-no-complaints/)
+[Regarding KiCad Library Management – No Complaints](https://camilotejeiro.wordpress.com/2016/04/21/regarding-kicad-library-management-no-complaints)
 
-_These are largely based on the KiCad Library Conventions with some minor 
-changes based on my experience (completely personal choices and these **will** change)._
+_These are largely based on the 
+[KiCad Library Conventions](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention) 
+with some minor changes based on my experience (completely personal 
+choices and these **will** change)._
 
 
 ## Kicad Schematic Sizes
