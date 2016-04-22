@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NPN-BJT_BC817-40LT3G
+D General Purpose NPN Silicon Bipolar Junction Transistor
+K npn bjt transistor BC817-40LT3G
+F http://www.onsemi.com/pub_link/Collateral/BC817-16LT1-D.PDF
+$ENDCMP
+#
+$CMP Q-NPN-BCE
+D NPN Bipolar Junction Transistor with 1B 2C 3E Pinout
+K Transistor NPN BJT
+$ENDCMP
+#
+$CMP Q-NPN-BEC
+D NPN Bipolar Junction Transistor with 1B 2E 3C Pinout
+K Bipolar Transistor NPN BJT
+$ENDCMP
+#
+$CMP Q-NPN-CBE
+D NPN Bipolar Junction Transistor with 1C 2B 3E Pinout
+K Bipolar Transistor NPN BJT
+$ENDCMP
+#
+$CMP Q-NPN-CEB
+D NPN Bipolar Junction Transistor with 1C 2E 3B Pinout
+K Bipolar Transistor NPN BJT
+$ENDCMP
+#
+$CMP Q-NPN-EBC
+D NPN Bipolar Junction Transistor with 1E 2B 3C Pinout
+K Bipolar Transistor NPN BJT
+$ENDCMP
+#
+$CMP Q-NPN-ECB
+D NPN Bipolar Junction Transistor with 1E 2C 3B Pinout
+K Bipolar Transistor NPN BJT
+$ENDCMP
+#
+#End Doc Library

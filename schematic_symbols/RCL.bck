@@ -40,7 +40,12 @@ D Potentionmeter EUR
 K R POT EUR
 $ENDCMP
 #
-$CMP RPOT-US
+$CMP RPOT_EUR
+D Potentionmeter EUR
+K R POT EUR
+$ENDCMP
+#
+$CMP RPOT_US
 D Potentiometer US
 K RPOT US
 $ENDCMP
