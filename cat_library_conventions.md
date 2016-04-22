@@ -33,7 +33,7 @@ _Keep them in Imperial units: KiCad Eeschema only has support for imperial units
     you can reduce the size in the board schematic directly (not in 
     the original library symbol)
 
-* text fields clearance (edge to edge): 0.01 inches (10 mils)  
+* Text fields clearance (edge to edge): 0.01 inches (10 mils)  
     15 mils center to edge of text field.
 
 Also make sure you align the Field text accordingly so that when it expands 
