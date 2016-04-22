@@ -1,5 +1,5 @@
-Camilo KiCad Library Conventions
-==========================
+KiCad CAT Library Conventions
+=============================
 
 _First and Foremost:_
 [Regarding KiCad Library Management – No Complaints](https://camilotejeiro.wordpress.com/2016/04/21/regarding-kicad-library-management-no-complaints)
