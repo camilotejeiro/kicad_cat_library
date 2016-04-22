@@ -7,6 +7,7 @@ _First and Foremost:_
 _These are largely based on the KiCad Library Conventions with some minor 
 changes based on my experience (completely personal choices and these **will** change)._
 
+
 ## Kicad Schematic Sizes
 ---
 
@@ -39,6 +40,7 @@ _Keep them in Imperial units: KiCad Eeschema only has support for imperial units
 Also make sure you align the Field text accordingly so that when it expands 
 it doesnt overlap with the symbol.
 
+
 ## Kicad Schematic Naming Conventions
 ---
 
@@ -50,6 +52,8 @@ we'll see._
 
 ### Library names (sticking to KLC)
 
+*note that only underscores are used for spaces*
+
 * Generic Library Name example: 
     Use the digikey/mouser product categories as a reference.   
     > Product_Category_Only:          RCL.lib, Bipolar_Transistors_BJT_Single.lib
@@ -59,12 +63,15 @@ we'll see._
 
 ### Symbol Names 
 
+*note that both dashes and underscores are used*
+
 * Generic schematic Symbol Example:  
     > Schematic-Symbol-Description:               C-POL-US, Q-NPN-BCE
     
 * Manufacturer schematic Symbol Example: 
     Always append full part number.  
     > Schematic-Symbol-Description_Part-Number:   OPAMP-W-SUPPLY_MCP6001UT-I/OT
+
 
 ## Kicad Land Pattern Creation Steps (Requirements)
 ---
@@ -107,6 +114,7 @@ calculator tool and use those results_
     - Populate the footprint properties.
     - Add 3D model if applicable.
 
+
 ## Kicad Land Pattern Naming Conventions
 ---
 
@@ -118,6 +126,8 @@ we'll see._
 
 ### Library names (sticking to KLC)
 
+*note that only underscores are used for spaces*
+
 * Generic Library Name example: 
     Use the name of the standard Land pattern category (Be specific).    
     > Specific_Land_Pattern_Standard:          RCL_SMD_Chip_IPC.lib.
@@ -127,10 +137,11 @@ we'll see._
 
 ### Land Pattern Names 
 
-**Always use full part number.**
+*note that both dashes and underscores are used*
 
 * Generic Land Pattern Example:  
     > Land-Pattern-Description:               1608M-0603I-Most
     
 * Manufacturer Land Pattern Example:  
+    Always use full part number.  
     > Land-Pattern-Description_Part-Number:   SOT-23_BC817-40LT3G
