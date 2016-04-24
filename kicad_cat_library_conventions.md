@@ -36,8 +36,9 @@ _Keep them in Imperial units: KiCad Eeschema only has support for imperial units
     you can reduce the size in the board schematic directly (not in 
     the original library symbol)
 
-* Text fields clearance (edge to edge): 0.01 inches (10 mils)  
-    15 mils center to edge of text field.
+* Text fields clearance:  
+    - If edge to edge:                  0.01 inches (10 mils) or, 
+    - If center to edge of text field:  0.015 inches (15 mils) 
 
 Also make sure you align the Field text accordingly so that when it expands 
 it doesnt overlap with the symbol.
@@ -61,14 +62,14 @@ we'll see._
     > Product_Category_Only:          RCL.lib, Bipolar_Transistors_BJT_Single.lib
      
 * Manufacturer Library Name Example:  
-    > Manufacturer_Product_Category:  Microchip_PIC16_MCUs.lib
+    > Manufacturer_Specific_Product_Category:  Microchip_PIC16_MCUs.lib
 
 ### Symbol Names 
 
 *note that both dashes and underscores are used*
 
 * Generic schematic Symbol Example:  
-    > Schematic-Symbol-Description:               C-POL-US, Q-NPN-BCE
+    > Schematic-Symbol-Description:               C-POL-US, Q-NPN-BCE or BJT-NPN-BCE
     
 * Manufacturer schematic Symbol Example: 
     Always append full part number.  
@@ -102,17 +103,26 @@ calculator tool and use those results_
 
 5. Silkscreen Outline (if applicable)
     - line width:                               0.15mm
-    - silkscreen clearance:                     0.25mm
+    - silkscreen clearance:                     0.25mm  
+        * To other silkscreen:                  Edge to edge
+        * To assembly line:                     Center (assy line) to edge.
+        * To component pad:                     Edge to Edge.
 
 6. Text Fields
     - height:                                   1mm
     - width:                                    20%
-    - Default Clearance:                        0.25mm    
+    - Default Clearance (edge to edge):         0.25mm
+    - Default Clearance (center to edge):       0.30mm
     - Name field:                               REF**
     - Value field:                              Footprint name.
     - value field is invisible.
 
 7. Footprint properties.
+    - Doc Field:        Readable meaningful description of footprint. 
+                        This field is very flexible, use linking words and 
+                        no abbreviations.                        
+    - Keywords:         Footprint name words with no underscores or 
+                        dashes (except for manufacturer part name).
     - Populate the footprint properties.
     - Add 3D model if applicable.
 
@@ -147,3 +157,9 @@ we'll see._
 * Manufacturer Land Pattern Example:  
     Always use full part number.  
     > Land-Pattern-Description_Part-Number:   SOT-23_BC817-40LT3G
+
+
+_Always build your libraries on a **need to have basis**, do not build 
+parts you don't need (more parts **does not** mean better libraries). 
+Otherwise they will go unmaintained and mix with the good parts and 
+clutter your libraries making them useless_

@@ -1,11 +1,11 @@
-(module RCL_1005M_0402I_Least (layer F.Cu) (tedit 5711B33B)
+(module 1005M-0402I-Least (layer F.Cu) (tedit 5711B33B)
   (descr "RCL 1005 Metric 0402 Imperial Least Land")
-  (tags "RCL 1005M 0402I")
+  (tags "1005M 0402I")
   (attr smd)
   (fp_text reference REF** (at 0 -1) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
-  (fp_text value RCL_1005M_0402I_Least (at 0 1.1) (layer F.Fab) hide
+  (fp_text value 1005M-0402I-Least (at 0 1.1) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (fp_line (start -0.1 -0.2) (end -0.1 0.2) (layer F.Adhes) (width 0.01))

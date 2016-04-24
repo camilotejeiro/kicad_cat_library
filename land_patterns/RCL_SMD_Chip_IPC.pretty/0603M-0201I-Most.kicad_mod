@@ -1,11 +1,11 @@
-(module RCL_0603M_0201I_Most (layer F.Cu) (tedit 5711B2E4)
+(module 0603M-0201I-Most (layer F.Cu) (tedit 5711B2E4)
   (descr "RCL 0603 Metric 0201 Imperial Most Land")
-  (tags "RCL 0603M 0201I")
+  (tags "0603M 0201I")
   (attr smd)
   (fp_text reference REF** (at 0 -1) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
-  (fp_text value RCL_0603M_0201I_Most (at 0 1.1) (layer F.Fab) hide
+  (fp_text value 0603M-0201I-Most (at 0 1.1) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (fp_line (start -0.05 -0.1) (end -0.05 0.1) (layer F.Adhes) (width 0.01))

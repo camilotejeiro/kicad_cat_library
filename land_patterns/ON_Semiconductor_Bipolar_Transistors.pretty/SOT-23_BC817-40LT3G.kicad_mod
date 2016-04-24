@@ -1,5 +1,5 @@
 (module SOT-23_BC817-40LT3G (layer F.Cu) (tedit 57192E49)
-  (descr "SOT-23 (TO-236) Land Pattern for BC817-40LT3G")
+  (descr "SOT-23 (TO-236) land pattern for component BC817-40LT3G")
   (tags "SOT-23 TO-236 BC817-40LT3G")
   (attr smd)
   (fp_text reference REF** (at 0 -2.25) (layer F.SilkS)
