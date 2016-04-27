@@ -105,7 +105,6 @@ calculator tool and use those results_
     - line width:                               0.15mm
     - silkscreen clearance:                     0.25mm  
         * To other silkscreen:                  Edge to edge
-        * To assembly line:                     Center (assy line) to edge.
         * To component pad:                     Edge to Edge.
 
 6. Text Fields

@@ -1,5 +1,5 @@
 (module 1608M-0603I-Least (layer F.Cu) (tedit 5711B38B)
-  (descr "RCL 1608 Metric 0603 Imperial Least Land")
+  (descr "1608 Metric 0603 Imperial Least Land")
   (tags "0603M 0201I")
   (attr smd)
   (fp_text reference REF** (at 0 -1.2) (layer F.SilkS)
@@ -23,4 +23,9 @@
   (fp_line (start -1.135 0.535) (end -1.135 -0.535) (layer F.CrtYd) (width 0.05))
   (pad 1 smd rect (at -0.67 0) (size 0.69 0.83) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.67 0) (size 0.69 0.83) (layers F.Cu F.Paste F.Mask))
+  (model ${KICAD_CAT_LIBS_3D_PACKAGES}/Capacitors_SMD_Chip_IPC.3dshapes/1608M-0603I.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

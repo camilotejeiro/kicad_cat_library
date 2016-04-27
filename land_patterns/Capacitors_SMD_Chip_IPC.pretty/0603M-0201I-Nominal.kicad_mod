@@ -1,5 +1,5 @@
 (module 0603M-0201I-Nominal (layer F.Cu) (tedit 5711B302)
-  (descr "RCL 0603 Metric 0201 Imperial Nominal Land")
+  (descr "0603 Metric 0201 Imperial Nominal Land")
   (tags "0603M 0201I")
   (attr smd)
   (fp_text reference REF** (at 0 -0.95) (layer F.SilkS)
@@ -22,4 +22,9 @@
   (fp_line (start -0.6 0.33) (end -0.6 -0.33) (layer F.CrtYd) (width 0.05))
   (pad 1 smd rect (at -0.28 0) (size 0.38 0.4) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.28 0) (size 0.38 0.4) (layers F.Cu F.Paste F.Mask))
+  (model ${KICAD_CAT_LIBS_3D_PACKAGES}/Capacitors_SMD_Chip_IPC.3dshapes/0603M-0201I.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

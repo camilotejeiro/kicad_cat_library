@@ -1,5 +1,5 @@
 (module 2012M-0805I-Most (layer F.Cu) (tedit 5711B3F3)
-  (descr "RCL 2012 Metric 0805 Imperial Most Land")
+  (descr "2012 Metric 0805 Imperial Most Land")
   (tags "2012M 0805I")
   (attr smd)
   (fp_text reference REF** (at 0 -1.6) (layer F.SilkS)
@@ -23,4 +23,9 @@
   (fp_line (start -2.155 1.285) (end -2.155 -1.285) (layer F.CrtYd) (width 0.05))
   (pad 1 smd rect (at -0.975 0) (size 1.36 1.57) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0.975 0) (size 1.36 1.57) (layers F.Cu F.Paste F.Mask))
+  (model ${KICAD_CAT_LIBS_3D_PACKAGES}/Capacitors_SMD_Chip_IPC.3dshapes/2012M-0805I.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
