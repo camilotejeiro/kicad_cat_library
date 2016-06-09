@@ -1,4 +1,4 @@
-(module Vertical-TH-D16MM-H22.35MM_70F501AF-RC (layer F.Cu) (tedit 571ABEFE)
+(module Vertical-TH-D16MM-H22.35MM_70F501AF-RC (layer F.Cu) (tedit 574C6D23)
   (descr "Vertical Through Hole Land Pattern for 16mm Diameter 22.35mm Height choke 70F501AF-RC")
   (tags "Vertical TH D16MM H22.35MM 70F501AF-RC")
   (fp_text reference REF** (at 0 -8.85) (layer F.SilkS)
@@ -16,4 +16,9 @@
   (fp_circle (center 0 0) (end 8 0) (layer F.Fab) (width 0.15))
   (pad 1 thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask F.SilkS))
   (pad 2 thru_hole circle (at -10 0) (size 2 2) (drill 1) (layers *.Cu *.Mask F.SilkS))
+  (model /media/camilo/main_storage/workspaces/kicad_common/cat_libraries/3d_packages/Bourns_Varnished_Chokes.3dshapes/Vertical-TH-D16MM-H22.35MM_70F501AF-RC.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

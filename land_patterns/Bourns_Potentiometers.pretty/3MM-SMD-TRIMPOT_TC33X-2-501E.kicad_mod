@@ -33,4 +33,9 @@
   (pad 1 smd rect (at -1 1.8) (size 1.2 1.2) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0 -1.45) (size 1.6 1.5) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 1 1.8) (size 1.2 1.2) (layers F.Cu F.Paste F.Mask))
+  (model ${KICAD_CAT_LIBS_3D_PACKAGES}/Bourns_Potentiometers.3dshapes/3MM-SMD-TRIMPOT_TC33X-2-501E.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

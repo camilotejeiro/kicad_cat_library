@@ -79,8 +79,9 @@ we'll see._
 ## Kicad Land Pattern Creation Steps (Requirements)
 ---
 
-_For specific SMD Chip IPC compliant numbers please refer to your 
-calculator tool and use those results_
+_For specific SMD Chip IPC compliant resistors, capacitors or inductors 
+please refer to your common RCL calculator tool and use those results 
+for the individual libraries_
 
 **These are our generic requirements for manufacturer specific parts.**
 
