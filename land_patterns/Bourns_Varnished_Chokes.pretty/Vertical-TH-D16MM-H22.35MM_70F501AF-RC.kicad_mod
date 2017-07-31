@@ -16,7 +16,7 @@
   (fp_circle (center 0 0) (end 8 0) (layer F.Fab) (width 0.15))
   (pad 1 thru_hole circle (at 0 0) (size 2 2) (drill 1) (layers *.Cu *.Mask F.SilkS))
   (pad 2 thru_hole circle (at -10 0) (size 2 2) (drill 1) (layers *.Cu *.Mask F.SilkS))
-  (model /media/camilo/main_storage/workspaces/kicad_common/cat_libraries/3d_packages/Bourns_Varnished_Chokes.3dshapes/Vertical-TH-D16MM-H22.35MM_70F501AF-RC.wrl
+  (model /media/camilo/data/workspaces/kicad_common/cat_libraries/3d_packages/Bourns_Varnished_Chokes.3dshapes/Vertical-TH-D16MM-H22.35MM_70F501AF-RC.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

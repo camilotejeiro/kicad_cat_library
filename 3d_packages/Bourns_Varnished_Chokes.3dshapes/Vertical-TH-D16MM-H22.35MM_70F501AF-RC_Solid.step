@@ -2,7 +2,7 @@ ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('FreeCAD Model'),'2;1');
 FILE_NAME(
-'/media/camilo/main_storage/workspaces/kicad_common/cat_libraries/3d_
+'/media/camilo/data/workspaces/kicad_common/cat_libraries/3d_
 packages/Bourns_Varnished_Chokes.3dshapes/Vertical-TH-D16MM-H22.35MM_
 70F501AF-RC_Solid.step','2016-04-29T09:32:48',('Author'),(''),
   'Open CASCADE STEP processor 6.8','FreeCAD','Unknown');
