@@ -4,18 +4,23 @@ KiCad CAT Library Conventions
 _First and Foremost:_
 [Regarding KiCad Library Management – No Complaints](https://camilotejeiro.github.io/2016/04/22/regarding-kicad-library-management-no-complaints.html)
 
-_These are largely based on the 
-[KiCad Library Conventions](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention) 
-with some minor changes based on my experience (completely personal 
+_We will try to stick with 
+[KiCad Library Conventions, ](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention) 
+especially when official IEEE standards are followed (assume KLC onless otherwise noted). 
+However, there will be some minor differences based on my experience (completely personal 
 choices and these **will** change)._
 
 
 ## Kicad Schematic Sizes
 ---
 
-_Keep them in Imperial units: KiCad Eeschema only has support for imperial units._
+_Keep them in Imperial units: This is what is used in standards(IEC-60617), plust KiCad Eeschema only has support for imperial units._
 
-* Pin width (default wire size):        0.006 inches (6 mils)
+1. Pin Placement:
+    i.   Pin placement grid:              100mils (IEC-60617)
+    ii.  Pin length (min):                > 100 mils
+    iii. Pin length (max):                < 300 mils
+    iii. Pin length increments:           
 
 * Default Drawing width:                0.008 inches (8 mils)  
     But you can use any increment of 0.002 mils if necessary e.g:
@@ -23,13 +28,13 @@ _Keep them in Imperial units: KiCad Eeschema only has support for imperial units
     - 0.008 inches. Always default to 8 mils to draw symbol outline.
     - 0.01  inches
 
-* Pin length:                           0.1 inches (100 mils)
+
 
 * Pin number size:                      0.050 inches (50 mils)
 
 * Pin name size:                        0.050 inches (50 mils)
 
-* Pin placement grid:                   0.1 inches  (100mils)
+
 
 * Text fields (name and value):         0.050 inches (50 mils)  
     Always keep them at 0.050" if they clutter the schematic 
