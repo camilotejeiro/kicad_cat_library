@@ -2,7 +2,7 @@ KiCad CAT Library Conventions
 =============================
 
 _First and Foremost:_
-[Regarding KiCad Library Management – No Complaints](https://camilotejeiro.wordpress.com/2016/04/21/regarding-kicad-library-management-no-complaints)
+[Regarding KiCad Library Management – No Complaints](https://camilotejeiro.github.io/2016/04/22/regarding-kicad-library-management-no-complaints.html)
 
 _These are largely based on the 
 [KiCad Library Conventions](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention) 
