@@ -100,7 +100,7 @@ plus KiCad Eeschema only has support for imperial units.
     + (iv) Symbol standard type
         - IEEE 315-1975  
 
-* Default Drawing width: **10 mils**  
+* Default drawing width: **10 mils**  
     But you can use any increment of +/-2 mils if really necessary e.g:  
     + 10 mil: default 
     + 8 mil 
@@ -146,7 +146,7 @@ _[KLC5 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 _[KLC6 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#6-footprint-naming-conventions)._ 
 
 **Note: both dashes and underscores are used.** We are not using lower 
-case only (see 2016 textpad notes), because symbol, land pattern and 
+case only (see 2016 textpad notes). Also symbol, land pattern and 
 3d model names follow the convention already: this is supported by KLC.
 
 * Generic Land Pattern Example:  
