@@ -105,10 +105,10 @@ plus KiCad Eeschema only has support for imperial units.
     + 6 mil
 
 * Default drawing grid: **50 mils** (default for Eeschema)  
-    But you can use any increment of 10 mils as necessary: 
+    But you can use any increment of 10 mils as necessary e.g: 
     + 40 mil
-    + 30 mil ... etc.
-    For example when drawing resistors, capacitors, transistors ...etc, 
+    + 30 mil ... etc.  
+    When drawing resistors, capacitors, transistors ...etc, 
     you need finer details.  
     
     _However, make sure to preserve all other pin placement and symbol guidelines._
