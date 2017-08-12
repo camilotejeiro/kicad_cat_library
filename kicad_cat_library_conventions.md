@@ -58,7 +58,7 @@ _[KLC2 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 _[KLC3 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#3-symbol-names)._ 
 
 **Note: both dashes and underscores are used.** We are not using lower 
-case only (see 2016 textpad notes), because symbol, land pattern and 
+case only (see 2016 textpad notes). Also symbol, land pattern and 
 3d model names follow the convention already: this is supported by KLC.
 
 * Generic schematic Symbol Example:  
