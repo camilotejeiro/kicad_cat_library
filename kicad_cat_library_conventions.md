@@ -77,7 +77,7 @@ Some important sections re-written for clarity.
 **Keep them in Imperial units:** This is what is used in standards(IEC-60617), 
 plus KiCad Eeschema only has support for imperial units.
 
-* Default drawing grid: **50 mils**  
+* Recommended drawing grid: **50 mils** (default for Eeschema) 
     Preserving all other pin placement and symbol guidelines.
 
 * (1) Pin placement (re-written for clarity) 
