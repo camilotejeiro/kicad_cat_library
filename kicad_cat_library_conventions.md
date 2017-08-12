@@ -77,7 +77,7 @@ Some important sections re-written for clarity.
 **Keep them in Imperial units:** This is what is used in standards(IEC-60617), 
 plus KiCad Eeschema only has support for imperial units.
 
-* Recommended drawing grid: **50 mils** (default for Eeschema) 
+* Recommended drawing grid: **50 mils** (default for Eeschema)  
     Preserving all other pin placement and symbol guidelines.
 
 * (1) Pin placement (re-written for clarity) 
@@ -102,13 +102,11 @@ plus KiCad Eeschema only has support for imperial units.
 
 * Default Drawing width: **10 mils**  
     But you can use any increment of +/-2 mils if really necessary e.g:  
-    
     + 10 mil: default 
     + 8 mil 
     + 6 mil.
 
 * (8) Text fields size: 50 mils for all  
-    
     + (i) Value field  
     + (ii) Reference field  
     + (iii) Footprint field  
@@ -120,7 +118,6 @@ plus KiCad Eeschema only has support for imperial units.
     the original library symbol)
 
 * Text fields clearance:   
-    
     + If edge to edge: 
         - 10 mils or,  
     + If center to edge of text field: 
