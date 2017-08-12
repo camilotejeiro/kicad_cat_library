@@ -77,9 +77,6 @@ Some important sections re-written for clarity.
 **Keep them in Imperial units:** This is what is used in standards(IEC-60617), 
 plus KiCad Eeschema only has support for imperial units.
 
-* Recommended drawing grid: **50 mils** (default for Eeschema)  
-    Preserving all other pin placement and symbol guidelines.
-
 * (1) Pin placement (re-written for clarity) 
     + (i)  Pin placement
         - At 100mils or integer multiples of 100mil (IEC-60617)  
@@ -102,9 +99,16 @@ plus KiCad Eeschema only has support for imperial units.
 
 * Default drawing width: **10 mils**  
     But you can use any increment of +/-2 mils if really necessary e.g:  
+    + 12 mil
     + 10 mil: default 
     + 8 mil 
     + 6 mil
+
+* Default drawing grid: **50 mils** (default for Eeschema)  
+    But you can use any increment of 10 mils as necessary: 
+    For example when drawing resistors, capacitors, transistors ...etc, 
+    you need finer details.
+    However, make sure to preserve all other pin placement and symbol guidelines.
 
 * (8) Text fields size: 50 mils for all  
     + (i) Value field  
