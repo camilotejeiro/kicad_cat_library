@@ -268,9 +268,8 @@ Some important sections re-written for clarity.
 ## 9. Rules for Through Hole Technology (THT) Footprints (Land Patterns)
 ---
 _[KLC9 Non-compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#9-rules-for-through-hole-technology-tht-footprints)._ 
-KLC9.2 was modified: land pattern anchor should always be on center, .
 
-* (2) Modified: **Footprint anchor should be set on center. ** Otherwise, layout rotation gets messy (read annoying).   
+* (2) Modified: **Footprint anchor should be set on center.** Otherwise, layout rotation gets messy (read annoying).   
 
 * (5) Minimum drilled hole diameter is the maximum lead diameter plus 0.20mm (IPC-2222 Class 2)
 
