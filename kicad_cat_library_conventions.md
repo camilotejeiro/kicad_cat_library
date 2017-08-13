@@ -4,21 +4,22 @@ KiCad CAT Library Conventions
 _First and Foremost:_
 [Regarding KiCad Library Management – No Complaints](https://camilotejeiro.github.io/2016/04/22/regarding-kicad-library-management-no-complaints.html).
 
-_We will try to keep this document up to date and stick with 
-[KiCad Library Conventions](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention)._ 
-Especially when official standards (e.g. IEEE) are followed (assume KLC unless otherwise noted). 
+_This document is largely based on [KiCad Library Conventions](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention)._ 
 
-However, there will be some minor differences based on my experience (completely personal 
+However, there are some minor differences for compliance with industry standards 
+(e.g. IEEE, IPC ...etc) and based on my design experience (completely personal 
 choices and these **will** change).
 
 ## Use of this document
 ---
 
-When building components:
+When building library components:
 
-1. Follow the guidelines in this document first
+1. Follow the rules in this document first: these take prevalence over KLC.
 
-2. Check to make sure you meet compliance with official KLC
+If you need additional guidelines: 
+
+2. Follow the KLC reference in every section, **but only if there are no rule conflicts (with my library rules)**.
 
 ## Library Structure
 ---
@@ -74,8 +75,7 @@ kicad_library
 ## 1. General Rules
 ---
 
-_[KLC1 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#1-general-rules)._ 
-Plus a couple of other important tips.
+_[KLC1 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#1-general-rules)._ 
 
 **Remember: Abbreviations all caps, otherwise only first letter uppercase.**
 
@@ -108,7 +108,7 @@ Plus a couple of other important tips.
 ## 2. Symbol Library names (Naming Conventions)
 ---
 
-_[KLC2 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#2-symbol-library-names-lib-files)._ 
+_[KLC2 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#2-symbol-library-names-lib-files)._ 
 
 **Note: only underscores are used for spaces**
 
@@ -122,7 +122,7 @@ _[KLC2 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 ## 3. Symbol Names (Naming Conventions)
 ---
 
-_[KLC3 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#3-symbol-names)._ 
+_[KLC3 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#3-symbol-names)._ 
 
 **Note: both dashes and underscores are used.** We are not using underscore 
 only (see 2016 textpad notes). Also symbol, land pattern and 
@@ -140,8 +140,7 @@ only (see 2016 textpad notes). Also symbol, land pattern and
 ## 4. General Rules for Symbols (Drawing Conventions) 
 ---
 
-_[KLC4 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#4-general-rules-for-symbols)._ 
-Some important sections re-written for clarity.
+_[KLC4 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#4-general-rules-for-symbols)._
 
 **Keep them in Imperial units:** This is what is used in standards(IEC-60617), 
 plus KiCad Eeschema only has support for imperial units.
@@ -207,7 +206,7 @@ it doesn't overlap with the symbol.
 ## 5. Footprint Library Naming Conventions (Land Pattern Naming Conventions)
 ---
 
-_[KLC5 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#5-footprint-library-naming-conventions)._ 
+_[KLC5 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#5-footprint-library-naming-conventions)._ 
 
 **Note: only underscores are used for spaces.**
 
@@ -221,7 +220,7 @@ _[KLC5 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 ## 6. Footprint Naming Conventions (Land Pattern Naming Conventions) 
 ---
 
-_[KLC6 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#6-footprint-naming-conventions)._ 
+_[KLC6 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#6-footprint-naming-conventions)._ 
 
 **Note: both dashes and underscores are used.** We are not using underscore 
 only (see 2016 textpad notes). Also symbol, land pattern and 
@@ -237,8 +236,7 @@ only (see 2016 textpad notes). Also symbol, land pattern and
 ## 7. General Rules for Footprints 
 ---
 
-_[KLC7 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#7-general-rules-for-footprints)._ 
-Some important sections re-written for clarity.
+_[KLC7 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#7-general-rules-for-footprints)._ 
 
 **For specific SMD Chip IPC compliant resistors, capacitors or inductors:** 
 please refer to your common RCL calculator tool and use those results 
@@ -325,8 +323,7 @@ for the individual libraries.
 ## 8. Rules for Surface Mount Devices (SMD) Footprints (Land Patterns) 
 ---
 
-_[KLC8 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#8-rules-for-surface-mount-devices-smd-footprints)._ 
-Some important sections re-written for clarity.
+_[KLC8 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#8-rules-for-surface-mount-devices-smd-footprints)._ 
 
 * (2) Footprint anchor should be placed in the middle of the footprint (IPC-7351) 
     Generally this is the centroid calculated with respect to the device lead ends
@@ -347,7 +344,7 @@ Some important sections re-written for clarity.
 
 ## 9. Rules for Through Hole Technology (THT) Footprints (Land Patterns)
 ---
-_[KLC9 Non-compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#9-rules-for-through-hole-technology-tht-footprints)._ 
+_[KLC9 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#9-rules-for-through-hole-technology-tht-footprints)._ 
 
 * (2) Modified: **Footprint anchor should be set on center.** Otherwise, 
     layout rotation gets messy (read annoying)   
@@ -359,8 +356,7 @@ _[KLC9 Non-compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-
 
 ## 10. Footprint properties
 ---
-_[KLC10 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#10-footprint-properties)._ 
-Some important sections re-written for clarity.
+_[KLC10 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#10-footprint-properties)._ 
 
 * (1) Footprint name must match its filename (.kicad_mod files)  
 
