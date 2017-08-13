@@ -156,7 +156,7 @@ plus KiCad Eeschema only has support for imperial units.
 
 * (2) Symbol visual style
     + (i) Symbol origin
-        - Center of symbol 
+        - Center of symbol when possible (note pin placement takes precedence)
     + (ii) Symbol body line with
         - 10 mils  
     + (iii) Symbol body background
