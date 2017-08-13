@@ -1,4 +1,4 @@
-(module SOT-23_BC817-40LT3G (layer F.Cu) (tedit 57192E49)
+(module SOT-23_BC817-40LT3G (layer F.Cu) (tedit 598EBF75)
   (descr "SOT-23 (TO-236) land pattern for component BC817-40LT3G")
   (tags "SOT-23 TO-236 BC817-40LT3G")
   (attr smd)
@@ -45,9 +45,9 @@
   (fp_line (start -1.45 0.3) (end -1.45 -0.65) (layer F.SilkS) (width 0.15))
   (fp_line (start -1.45 -0.65) (end -0.65 -0.65) (layer F.SilkS) (width 0.15))
   (fp_line (start 1.45 -0.65) (end 1.45 0.3) (layer F.SilkS) (width 0.15))
-  (pad 1 smd rect (at -0.95 1) (size 0.8 0.9) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0.95 1) (size 0.8 0.9) (layers F.Cu F.Paste F.Mask))
-  (pad 3 smd rect (at 0 -1) (size 0.8 0.9) (layers F.Cu F.Paste F.Mask))
+  (pad b smd rect (at -0.95 1) (size 0.8 0.9) (layers F.Cu F.Paste F.Mask))
+  (pad e smd rect (at 0.95 1) (size 0.8 0.9) (layers F.Cu F.Paste F.Mask))
+  (pad c smd rect (at 0 -1) (size 0.8 0.9) (layers F.Cu F.Paste F.Mask))
   (model ${KICAD_CAT_LIBS_3D_PACKAGES}/ON_Semiconductor_Bipolar_Transistors.3dshapes/SOT-23_BC817-40LT3G.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))

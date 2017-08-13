@@ -20,6 +20,60 @@ When building components:
 
 2. Check to make sure you meet compliance with official KLC
 
+## Library Structure
+---
+
+Component libraries are always categorized in generic-functional (for common 
+low-pin count) and manufacturer-based parts, this makes component-reuse 
+possible. Here is a short example:
+
+~~~
+kicad_library
+├── generic_3d_packages
+│   ├── Capacitors_SMD_Chip_IPC.3dshapes
+│   │   ├── 1608M-0603I.wings
+│   │   ├── 1608M-0603I.wrl
+│   │   ├── 2012M-0805I.wings
+│   │   └── 2012M-0805I.wrl
+│   ├── Pin_Headers_Imperial.3dshapes
+│   │   ├── 01X02-0.1IN-Straight-TH.wings
+│   │   └── 01X02-0.1IN-Straight-TH.wrl
+│   └── Resistors_SMD_Chip_IPC.3dshapes
+│       ├── 1608M-0603I.wings
+│       ├── 1608M-0603I.wrl
+│       ├── 2012M-0805I.wings
+│       └── 2012M-0805I.wrl
+├── generic_land_patterns
+│   ├── Capacitors_SMD_Chip_IPC.pretty
+│   │   ├── 1608M-0603I-Nominal.kicad_mod
+│   │   └── 2012M-0805I-Nominal.kicad_mod
+│   ├── Pin_Headers_Imperial.pretty
+│   │   └── 01X02-0.1IN-Straight-TH.kicad_mod
+│   └── Resistors_SMD_Chip_IPC.pretty
+│       ├── 1608M-0603I-Nominal.kicad_mod
+│       └── 2012M-0805I-Nominal.kicad_mod
+├── generic_schematic_symbols
+│   ├── Bipolar_Transistors_BJT_Single.bck
+│   ├── Bipolar_Transistors_BJT_Single.dcm
+│   ├── Bipolar_Transistors_BJT_Single.lib
+│   ├── Connectors.bck
+│   ├── Connectors.dcm
+│   ├── Connectors.lib
+│   ├── RCL.bck
+│   ├── RCL.dcm
+│   └── RCL.lib
+├── manufacturer_3d_packages
+│   └── ON_Semiconductor_Bipolar_Transistors.3dshapes
+│       ├── SOT-23_BC817-40LT3G.wings
+│       └── SOT-23_BC817-40LT3G.wrl
+├── manufacturer_land_patterns
+│   └── ON_Semiconductor_Bipolar_Transistors.pretty
+│       └── SOT-23_BC817-40LT3G.kicad_mod
+├── manufacturer_schematic_symbols
+└── readme.md
+~~~
+
+
 ## 1. General Rules
 ---
 
@@ -37,6 +91,22 @@ Plus a couple of other important tips.
     You don't need hundreds of libraries included in your project when you are
     only using 2 or 3 at most, this is a great way to make mistakes. 
     **Keep your project workspace clean.** 
+
+* Pin names and numbers (for generic-functional parts i.e. common low-pin-count components)  
+    + Pin numbers: should follow lower-case letter conventions if pin functions 
+        are available (e.g. bec for BJTs, gsd for MOSFETs ...etc), 
+        otherwise use standard numbers (e.g. 123...etc for connectors).   
+    + Pin names: should describe pin functions if available (e.g. Base,
+        Emitter, Collector for BJTs ...etc), otherwise use same numbers as pin
+        number.    
+
+* Pin names and numbers (for manufacturer parts)  
+    + Pin numbers: Generally for high-pin-count parts, pin numbers should match 
+        numbers used in the datasheet, except for some common manufacturer parts 
+        (e.g. BJTs, MOSFETs, Diodes ...etc) where you should use lower-case
+        letter convention (to allow for generic schematic-pcb part association)
+    + Pin names: should describe pin functions if available, otherwise use same
+        numbers as pin number.
 
 ## 2. Symbol Library names (Naming Conventions)
 ---
