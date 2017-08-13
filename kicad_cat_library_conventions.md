@@ -200,8 +200,13 @@ plus KiCad Eeschema only has support for imperial units.
     + If center to edge of text field 
         - 15 mils   
     
-Also make sure you align the Field text accordingly so that when it expands 
-it doesn't overlap with the symbol.
+    Also make sure you align the Field text accordingly so that when it expands 
+    it doesn't overlap with the symbol.
+
+* (10) Part meta-data.
+    + (i) Description field: describe the component, free-form (no rules)
+    + (iv) Keywords: Choose the keywords (space separated) that will 
+        help you find the components from the library chooser.
 
 ## 5. Footprint Library Naming Conventions (Land Pattern Naming Conventions)
 ---
@@ -225,6 +230,8 @@ _[KLC6 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 **Note: both dashes and underscores are used.** We are not using underscore 
 only (see 2016 textpad notes). Also symbol, land pattern and 
 3d model names follow the convention already: this is supported by KLC.
+
+* Footprint name shall not repeat words/naming from the library name.
 
 * Generic Land Pattern Example  
     > Land-Pattern-Description:               1608M-0603I-Most
