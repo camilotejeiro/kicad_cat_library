@@ -1,48 +1,33 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP C-NPOL-EUR
-D Capacitor Non-Polarized EUR
-K C NPOL EUR
+$CMP C-NPOL-AME
+D Non-Polarized Capacitor, Americas Symbol
+K C NPOL Capacitor Non-polarized
 $ENDCMP
 #
-$CMP C-NPOL-US
-D Capacitor Non-Polarized US
-K C NPOL US
-$ENDCMP
-#
-$CMP C-POL-EUR
-D Capacitor Polarized EUR
-K C POL EUR
-$ENDCMP
-#
-$CMP C-POL-US
-D Capacitor Polarized US
-K C POL US
+$CMP C-POL-AME
+D Polarized Capacitor, Americas Symbol
+K C POL Polarized Capacitor
 $ENDCMP
 #
 $CMP L
-D Inductor
-K L
+D Inductor International Symbol
+K L Inductor
 $ENDCMP
 #
-$CMP R-EUR
-D Resistor EUR
-K R EUR
+$CMP R-AME
+D Resistor Americas Symbol
+K R Resistor
 $ENDCMP
 #
-$CMP R-US
-D Resistor US
-K R US
+$CMP R-POT-AME
+D Potentiometer Adjustable Contact Resistor Americas Symbol
+K R POT Resistor Potentiometer Adjustable
 $ENDCMP
 #
-$CMP RPOT-EUR
-D Potentionmeter EUR
-K R POT EUR
-$ENDCMP
-#
-$CMP RPOT-US
-D Potentiometer US
-K RPOT US
+$CMP R-VAR-AME
+D Adjustable/Variable Resistor (Rheostat) Americas Symbol
+K R VAR Resistor Variable Adjustable Rheostat
 $ENDCMP
 #
 #End Doc Library

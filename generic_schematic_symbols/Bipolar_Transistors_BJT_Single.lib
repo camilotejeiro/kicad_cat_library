@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
-# Q-NPN
+# NPN
 #
-DEF Q-NPN Q 0 0 N N 1 F N
+DEF NPN Q 0 0 N N 1 F N
 F0 "Q" 160 50 50 H V L BNN
-F1 "Q-NPN" 160 -50 50 H V L TNN
+F1 "NPN" 160 -50 50 H V L TNN
 F2 "" 200 100 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW

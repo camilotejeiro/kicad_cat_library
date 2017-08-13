@@ -1,8 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP Q-NPN
-D Generic NPN Bipolar Junction Transistor
-K Generic Bipolar Transistor NPN BJT
+$CMP NPN
+D NPN Bipolar Junction Transistor, BJT
+K Bipolar Junction Transistor NPN BJT
 $ENDCMP
 #
 #End Doc Library

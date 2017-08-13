@@ -1,0 +1,28 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 01X01
+D 01X01 Terminal Strip, Pin Header 
+K 01X01 Terminal Strip Pin Header
+$ENDCMP
+#
+$CMP 01X02
+D 01X02 Terminal Strip, Pin Header
+K 01X02 Terminal Strip Pin Header
+$ENDCMP
+#
+$CMP 01X03
+D 01X03 Terminal Strip, Pin Header
+K 01X03 Terminal Strip Pin Header
+$ENDCMP
+#
+$CMP 01X04
+D 01X04 Terminal Strip, Pin Header
+K 01X04 Terminal Strip Pin Header
+$ENDCMP
+#
+$CMP 01X05
+D 01X05 Terminal Strip, Pin Header
+K 01X05 Terminal Strip Pin Header
+$ENDCMP
+#
+#End Doc Library
