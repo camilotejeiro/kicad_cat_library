@@ -124,9 +124,11 @@ _[KLC2 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 
 _[KLC3 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#3-symbol-names)._ 
 
-**Note: both dashes and underscores are used.** We are not using lower 
-case only (see 2016 textpad notes). Also symbol, land pattern and 
+**Note: both dashes and underscores are used.** We are not using underscore 
+only (see 2016 textpad notes). Also symbol, land pattern and 
 3d model names follow the convention already: this is supported by KLC.
+
+* Symbol name shall not repeat words/naming from the library name.
 
 * Generic schematic Symbol Example  
     > Schematic-Symbol-Description:               C-POL-US, Q-NPN-BCE or BJT-NPN-BCE
@@ -138,21 +140,22 @@ case only (see 2016 textpad notes). Also symbol, land pattern and
 ## 4. General Rules for Symbols (Drawing Conventions) 
 ---
 
-_[KLC4 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#4-general-rules-for-symbols)._ 
+_[KLC4 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#4-general-rules-for-symbols)._ 
 Some important sections re-written for clarity.
 
 **Keep them in Imperial units:** This is what is used in standards(IEC-60617), 
 plus KiCad Eeschema only has support for imperial units.
 
-* (1) Pin placement (re-written for clarity) 
+* (1) Pin placement (additional rules added to be able to draw components accurately) 
     + (i)  Pin placement
-        - At 100mils or integer multiples of 100mil (IEC-60617)  
+        - Spacing at more than 100mils or integer multiples of 100mil (IEC-60617) 
+        - Must fall at min on the 50 mils grid (from center).
     + (ii) Pin length (min)
         - More than 100 mils  
     + (iii) Pin length (max)
         - Less than 300 mils  
     + (iv) Pin length increments
-        - 50 mils   
+        - 50 mils
 
 * (2) Symbol visual style
     + (i) Symbol origin
@@ -220,8 +223,8 @@ _[KLC5 Compliant](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 
 _[KLC6 Compliant, more specific rules added](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention#6-footprint-naming-conventions)._ 
 
-**Note: both dashes and underscores are used.** We are not using lower 
-case only (see 2016 textpad notes). Also symbol, land pattern and 
+**Note: both dashes and underscores are used.** We are not using underscore 
+only (see 2016 textpad notes). Also symbol, land pattern and 
 3d model names follow the convention already: this is supported by KLC.
 
 * Generic Land Pattern Example  
