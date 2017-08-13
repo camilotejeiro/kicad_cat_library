@@ -145,6 +145,8 @@ _[KLC4 Reference](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Conv
 **Keep them in Imperial units:** This is what is used in standards(IEC-60617), 
 plus KiCad Eeschema only has support for imperial units.
 
+**Default grid:** 50 mils.
+
 * (1) Pin placement (additional rules added to be able to draw components accurately) 
     + (i)  Pin placement
         - Spacing at more than 100mils or integer multiples of 100mil (IEC-60617) 
@@ -194,11 +196,10 @@ plus KiCad Eeschema only has support for imperial units.
     you can reduce the size in the schematic directly (not in 
     the original library symbol)
 
-* Text fields clearance   
-    + If edge to edge 
-        - 10 mils or,  
-    + If center to edge of text field 
-        - 15 mils   
+* Text fields placement 
+    + Use 25 mil grid and make sure: 
+        - If edge to edge: min 10 mils or,  
+        - If center to edge of text field: min 15 mils   
     
     Also make sure you align the Field text accordingly so that when it expands 
     it doesn't overlap with the symbol.
