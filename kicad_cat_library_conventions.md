@@ -31,27 +31,24 @@ possible. Here is a short example:
 kicad_library
 ├── generic_3d_packages
 │   ├── Capacitors_SMD_Chip_IPC.3dshapes
-│   │   ├── 1608M-0603I.wings
 │   │   ├── 1608M-0603I.wrl
-│   │   ├── 2012M-0805I.wings
-│   │   └── 2012M-0805I.wrl
+│   │   ...
 │   ├── Pin_Headers_Imperial.3dshapes
-│   │   ├── 01X02-0.1IN-Straight-TH.wings
-│   │   └── 01X02-0.1IN-Straight-TH.wrl
+│   │   ├── 01X02-0.1IN-Straight-TH.wrl
+│   │   ...
 │   └── Resistors_SMD_Chip_IPC.3dshapes
-│       ├── 1608M-0603I.wings
 │       ├── 1608M-0603I.wrl
-│       ├── 2012M-0805I.wings
-│       └── 2012M-0805I.wrl
+│       ... 
 ├── generic_land_patterns
 │   ├── Capacitors_SMD_Chip_IPC.pretty
 │   │   ├── 1608M-0603I-Nominal.kicad_mod
-│   │   └── 2012M-0805I-Nominal.kicad_mod
+│   │   ...
 │   ├── Pin_Headers_Imperial.pretty
-│   │   └── 01X02-0.1IN-Straight-TH.kicad_mod
+│   │   ├── 01X02-0.1IN-Straight-TH.kicad_mod
+│   │   ...
 │   └── Resistors_SMD_Chip_IPC.pretty
 │       ├── 1608M-0603I-Nominal.kicad_mod
-│       └── 2012M-0805I-Nominal.kicad_mod
+│       ...
 ├── generic_schematic_symbols
 │   ├── Bipolar_Transistors_BJT_Single.bck
 │   ├── Bipolar_Transistors_BJT_Single.dcm
@@ -64,15 +61,15 @@ kicad_library
 │   └── RCL.lib
 ├── manufacturer_3d_packages
 │   └── ON_Semiconductor_Bipolar_Transistors.3dshapes
-│       ├── SOT-23_BC817-40LT3G.wings
-│       └── SOT-23_BC817-40LT3G.wrl
+│       ├── SOT-23_BC817-40LT3G.wrl
+│       ...
 ├── manufacturer_land_patterns
 │   └── ON_Semiconductor_Bipolar_Transistors.pretty
-│       └── SOT-23_BC817-40LT3G.kicad_mod
+│       ├── SOT-23_BC817-40LT3G.kicad_mod
+│       ... 
 ├── manufacturer_schematic_symbols
-└── readme.md
+...
 ~~~
-
 
 ## 1. General Rules
 ---
