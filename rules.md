@@ -19,15 +19,20 @@ When building library components:
 
 If you need additional guidelines: 
 
-2. Follow the KLC reference in every section, **but only if there are no rule 
-    conflicts (with my library rules)**.
+2. Follow the KLC reference in every section, **but only if there are no rule conflicts**.
 
 ## 0. Library Structure
 ---
 
 Component libraries are always categorized in generic-functional (for common 
 low-pin count) and manufacturer-based parts, this makes component-reuse 
-possible. Here is a short example:
+possible. 
+
+* note that every generic directory (3d_packages, schematic_symbols and 
+    land_patterns) must have a standards.txt file indicating the official 
+    standard used when building each generic part in the library.
+
+Here is a short example:
 
 ~~~
 kicad_library
@@ -38,9 +43,10 @@ kicad_library
 │   ├── Pin_Headers_Imperial.3dshapes
 │   │   ├── 01X02-0.1IN-Straight-TH.wrl
 │   │   ...
-│   └── Resistors_SMD_Chip_IPC.3dshapes
-│       ├── 1608M-0603I.wrl
-│       ... 
+|   ├── Resistors_SMD_Chip_IPC.3dshapes
+│   │   ├── 1608M-0603I.wrl
+│   │   ... 
+│   └── standards.txt
 ├── generic_land_patterns
 │   ├── Capacitors_SMD_Chip_IPC.pretty
 │   │   ├── 1608M-0603I-Nominal.kicad_mod
@@ -48,9 +54,10 @@ kicad_library
 │   ├── Pin_Headers_Imperial.pretty
 │   │   ├── 01X02-0.1IN-Straight-TH.kicad_mod
 │   │   ...
-│   └── Resistors_SMD_Chip_IPC.pretty
-│       ├── 1608M-0603I-Nominal.kicad_mod
-│       ...
+│   ├── Resistors_SMD_Chip_IPC.pretty
+│   |   ├── 1608M-0603I-Nominal.kicad_mod
+|   |   ...
+│   └── standards.txt   
 ├── generic_schematic_symbols
 │   ├── Bipolar_Transistors_BJT_Single.bck
 │   ├── Bipolar_Transistors_BJT_Single.dcm
@@ -60,7 +67,9 @@ kicad_library
 │   ├── Connectors.lib
 │   ├── RCL.bck
 │   ├── RCL.dcm
-│   └── RCL.lib
+│   ├── RCL.lib
+|   |   ...
+│   └── standards.txt   
 ├── manufacturer_3d_packages
 │   └── ON_Semiconductor_Bipolar_Transistors.3dshapes
 │       ├── SOT-23_BC817-40LT3G.wrl
@@ -151,9 +160,9 @@ plus KiCad Eeschema only has support for imperial units.
 * (1) Pin placement (additional rules added to be able to draw components accurately) 
     + (i)  Pin spacing
         - Spacing at more than 100mils or integer multiples of 100mil (IEC-60617) 
-    + Pin placement
-        - Recommended to fall on 100 mils grid (from center), otherwise.
-        - At min must fall on the 50 mils grid (from center).
+    + Pin grid placement
+        - Recommended to fall on the 100 mils grid (from center), otherwise.
+        - At min must fall on the 50 mils grid (necessary to keep origin centered for some parts).
     + (ii) Pin length (min)
         - More than 100 mils  
     + (iii) Pin length (max)
@@ -207,6 +216,22 @@ plus KiCad Eeschema only has support for imperial units.
     Also make sure you align the Field text accordingly so that when it expands 
     it doesn't overlap with the symbol.
 
+* (9) Default Symbol Fields (note changes for power sources)
+    + (i) Refdes: The appropriate reference designator 
+        - (a) For power sources
+            - Refdes will be V (it's a voltage source after all) and GND 
+            (you can have multiple grounds analog, digital1, digital2...). 
+            - In the schematic, it can take on any 
+                **character-only** unique values e.g: VCC, VEE, VDD, VSS, 
+                VS+, VS-, V+, V-, AGND, DGND to describe supply type.  
+            - Don't use many power symbols in schematic sheets, only on the first 
+                block diagram sheet, for all others use global nets.  
+            - This scheeme allows for maximum power symbols re-use and maintenance.
+    + (ii) Value: The name of the symbol (no exceptions)   
+        - In schematic, gets replaced by the numerical value with units (no exceptions).
+        - For voltage sources it will be replaced with 5V, 1.8V ...etc, for gnd it will 
+            be invisible by default (since it will always be 0V).
+        
 * (10) Part meta-data.
     + (i) Description field: describe the component, free-form (no rules)
     + (iv) Keywords: Choose the keywords (space separated) that will 
