@@ -1,5 +1,5 @@
-KiCad CAT Library Conventions
-=============================
+KiCad CAT Library Rules
+=======================
 
 _First and Foremost:_
 [Regarding KiCad Library Management – No Complaints](https://camilotejeiro.github.io/2016/04/22/regarding-kicad-library-management-no-complaints.html).
@@ -19,9 +19,10 @@ When building library components:
 
 If you need additional guidelines: 
 
-2. Follow the KLC reference in every section, **but only if there are no rule conflicts (with my library rules)**.
+2. Follow the KLC reference in every section, **but only if there are no rule 
+    conflicts (with my library rules)**.
 
-## Library Structure
+## 0. Library Structure
 ---
 
 Component libraries are always categorized in generic-functional (for common 
@@ -148,9 +149,11 @@ plus KiCad Eeschema only has support for imperial units.
 **Default grid:** 50 mils.
 
 * (1) Pin placement (additional rules added to be able to draw components accurately) 
-    + (i)  Pin placement
+    + (i)  Pin spacing
         - Spacing at more than 100mils or integer multiples of 100mil (IEC-60617) 
-        - Must fall at min on the 50 mils grid (from center).
+    + Pin placement
+        - Recommended to fall on 100 mils grid (from center), otherwise.
+        - At min must fall on the 50 mils grid (from center).
     + (ii) Pin length (min)
         - More than 100 mils  
     + (iii) Pin length (max)
