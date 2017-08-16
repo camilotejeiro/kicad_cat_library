@@ -172,7 +172,7 @@ plus KiCad Eeschema only has support for imperial units.
 
 * (2) Symbol visual style
     + (i) Symbol origin
-        - Center of symbol recommended (but not required).  
+        - Center of symbol strongly recommended (but not required).  
             Other constraints (e.g. pin placement have precedence)
     + (ii) Symbol body line with
         - 10 mils  
@@ -217,25 +217,18 @@ plus KiCad Eeschema only has support for imperial units.
     it doesn't overlap with the symbol.
 
 * (9) Default Symbol Fields (note changes for power sources)
-    + (i) Refdes: The appropriate reference designator 
-        - (a) For power sources
-            - Refdes will be V (it's a voltage source after all) and GND 
-            (you can have multiple grounds analog, digital1, digital2...). 
-            - In the schematic, it can take on any 
-                **character-only** unique values e.g: VCC, VEE, VDD, VSS, 
-                VS+, VS-, V+, V-, AGND, DGND to describe supply type.  
-            - Don't use many power symbols in schematic sheets, only on the first 
-                block diagram sheet, for all others use global nets.  
-            - This scheeme allows for maximum power symbols re-use and maintenance.
-    + (ii) Value: The name of the symbol (no exceptions)   
+    + (ii) Value: The name of the symbol (follow symbol naming conventions)   
         - In schematic, gets replaced by the numerical value with units (no exceptions).
-        - For voltage sources it will be replaced with 5V, 1.8V ...etc, for gnd it will 
-            be invisible by default (since it will always be 0V).
+        - For voltage sources it will be replaced with +5V, +1.8V ...etc, for gnd it will 
+            be invisible by default, but can be set visible and set to AGND, DGND ...etc.
         
 * (10) Part meta-data.
     + (i) Description field: describe the component, free-form (no rules)
     + (iv) Keywords: Choose the keywords (space separated) that will 
         help you find the components from the library chooser.
+
+* (13) Power-Flag Symbols (note differences)
+    + (ii) Contain explicitly one pin (invisible) set to Power Output (not power-input, ERC warnings)
 
 ## 5. Footprint Library Naming Conventions (Land Pattern Naming Conventions)
 ---
