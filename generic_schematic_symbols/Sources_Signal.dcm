@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP I-IND-DC
+D Inependent DC Current Signal Source/Sink
+K I Current Source Sink DC Power Signal
+$ENDCMP
+#
+$CMP V-IND-DC
+D Independent DC Voltage Signal Source
+K V Voltage Source DC Power Signal
+$ENDCMP
+#
+#End Doc Library

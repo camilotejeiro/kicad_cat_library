@@ -1,9 +1,0 @@
-IEEE 315-1975 
-
-* Terminal Strips (Pin Headers):            Section 5.1.1.1
-* Transistors Bipolar Single (BJT):         Section 8.6
-* RCL 
-    + Resistors:                            Section 2.1
-    + Capacitors:                           Section 2.2
-    + Inductors:                            Section 6.2
-

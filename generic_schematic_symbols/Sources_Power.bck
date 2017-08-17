@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GND
+D Ground Earth Reference Circuit Return
+K GND Ground 0V Earth Reference  
+$ENDCMP
+#
+$CMP GND-Earth-REF
+D Ground Earth Reference Circuit Return
+K GND Ground 0V Earth Reference  
+$ENDCMP
+#
+$CMP V+
+D Positive Power Supply Rail
+K Positive Power Supply Rail VCC VDD V+ VS+ V
+$ENDCMP
+#
+$CMP V-
+D Negative Power Supply Rail
+K V Negative Power Supply Rail VEE VSS V- VS- 
+$ENDCMP
+#
+$CMP V-NEG-Supply
+D Negative Power Supply Rail
+K V Negative Power Supply Rail VEE VSS V- VS- 
+$ENDCMP
+#
+$CMP V-PLUS-Supply
+D Positive Power Supply Rail
+K Positive Power Supply Rail VCC VDD V+ VS+ V
+$ENDCMP
+#
+#End Doc Library

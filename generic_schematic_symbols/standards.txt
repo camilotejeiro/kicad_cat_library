@@ -1,0 +1,23 @@
+Standards for Symbols Library
+=============================
+
+* Terminal Strips (Pin Headers):            IEEE 315-197: Section 5.1.1.1
+
+* Transistors Bipolar Single (BJT):         IEEE 315-197: Section 8.6
+
+* RCL 
+    + Resistors:                            IEEE 315-197: Section 2.1
+    + Capacitors:                           IEEE 315-197: Section 2.2
+    + Inductors:                            IEEE 315-197: Section 6.2
+
+* Sources Signal (no standards found):
+    + Outer boundary:                       IEEE 315-197: Section 2.7
+    + Inside symol:                         Wikipedia: Electronic Symbol
+
+* Sources Power:
+    + GND:                                  IEEE 315-197: Section 3.9.1
+    + POS and NEG Supply
+        (terminal and polarity):            IEEE 315-197: Section 5.1.1.1
+
+* Transistor MOSFET:                        IEEE 315-197: Section 8.6.10
+

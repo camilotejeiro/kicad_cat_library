@@ -4,7 +4,7 @@ KiCad CAT Library Rules
 _First and Foremost:_
 [Regarding KiCad Library Management – No Complaints](https://camilotejeiro.github.io/2016/04/22/regarding-kicad-library-management-no-complaints.html).
 
-_This document is largely based on [KiCad Library Conventions](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention)._ 
+_This document was largely based on [KiCad Library Conventions](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention)._ 
 
 However, there are some minor differences for compliance with industry standards 
 (e.g. IEEE, IPC ...etc) and based on my design experience (completely personal 
@@ -17,9 +17,9 @@ When building library components:
 
 1. Follow the rules in this document first: these take prevalence over KLC.
 
-If you need additional guidelines: 
+If you need additional guidelines (**and there are no rule conflicts**): 
 
-2. Follow the KLC reference in every section, **but only if there are no rule conflicts**.
+2. Follow the KLC reference in every section.
 
 ## 0. Library Structure
 ---
@@ -157,78 +157,76 @@ plus KiCad Eeschema only has support for imperial units.
 
 **Default grid:** 50 mils.
 
-* (1) Pin placement (additional rules added to be able to draw components accurately) 
-    + (i)  Pin spacing
-        - Spacing at more than 100mils or integer multiples of 100mil (IEC-60617) 
-    + Pin grid placement
-        - Recommended to fall on the 100 mils grid (from center), otherwise.
-        - At min must fall on the 50 mils grid (necessary to keep origin centered for some parts).
-    + (ii) Pin length (min)
-        - More than 100 mils  
-    + (iii) Pin length (max)
-        - Less than 300 mils  
-    + (iv) Pin length increments
-        - 50 mils
+* (1) Pin placement
+    + Pin spacing/grid
+        - Recommended: 100 mil grid with 100 mil spacing between pins.  
+        - Minimum: 50 mil grid with 50 mil spacing between pins.
+    + Pin length
+        - Recommended (L=100n): Length from 0 to 300 mils at integer multiples
+          of 100 (e.g. 0, 100, 200, 300).
+          - 0 mils length: _Useful for pins with invisible pin names and numbers,_ 
+          common for small low-pin-count discrete components 
+            (e.g. resistors, capacitors, inductors, FETs, BJTs ...etc)
+          - 100 mils length or more: _Useful for pins with visible descriptive
+            pin names and numbers_, common for high-pin-count and/or IC
+            components (e.g. MCUs, SOCs, OPAMPs, ADCs ...etc)
+            components, 
+        - Min (L=50n): Length from 0 to 300 mils at integer multiples of 50
+          (e.g. 0, 50, 100 ... 300). Useful for complex symbols or
+          high-pin-count components.
 
 * (2) Symbol visual style
-    + (i) Symbol origin
-        - Center of symbol strongly recommended (but not required).  
+    + Symbol origin
+        - Recommended: Center of symbol strongly recommended 
+            (but not required). For complex symbols other constraints take
+            precedence 
             Other constraints (e.g. pin placement have precedence)
-    + (ii) Symbol body line with
-        - 10 mils  
-    + (iii) Symbol body background
-        - Fill background     
-    + (iv) Symbol standard type
-        - IEEE 315-1975  
+    + Symbol body line with
+        - Required: 10 mils  
+    + Symbol standard type
+        - Recommended: IEEE 315-1975 or other EE standard. 
 
-* Default drawing width: **10 mils**  
-    But you can use any increment of +/-2 mils if really necessary e.g:  
-    + 12 mil
-    + 10 mil: default 
-    + 8 mil 
-    + 6 mil
-
-* Default drawing grid: **50 mils** (default for Eeschema)  
-    But you can use smaller grids as necessary e.g: 
-    + 25 mil
-    + 10 mil ... etc.  
-    When drawing resistors, capacitors, transistors ...etc, 
-    you need finer details.  
+* Symbol drawing grid 
+    + Recommended: Start from the default grid and go down to smaller grids for 
+        drawing the symbol finer details.
+    + Minimum: 5 mils is the smallest grid you can use to draw symbol details. 
     
-    _However, make sure to preserve all other pin placement and symbol guidelines._
-
-* (8) Text fields size: 50 mils for all  
-    + (i) Value field  
-    + (ii) Reference field  
-    + (iii) Footprint field  
-    + (iv) Datasheet field  
-    + (v) Pin names and numbers field  
+* (8) Text fields size
+    + Required: 50 mils for all  
 
     Always keep them at 50 mils if they clutter the schematic 
     you can reduce the size in the schematic directly (not in 
     the original library symbol)
 
 * Text fields placement 
-    + Use 25 mil grid and make sure: 
-        - If edge to edge: min 10 mils or,  
-        - If center to edge of text field: min 15 mils   
+    + Required: Use 25 mil grid and make sure: 
+        - If edge to edge min 10 mils of clearance or,  
+        - If center to edge of text field min 15 mils of clearance.  
     
     Also make sure you align the Field text accordingly so that when it expands 
     it doesn't overlap with the symbol.
 
-* (9) Default Symbol Fields (note changes for power sources)
-    + (ii) Value: The name of the symbol (follow symbol naming conventions)   
-        - In schematic, gets replaced by the numerical value with units (no exceptions).
-        - For voltage sources it will be replaced with +5V, +1.8V ...etc, for gnd it will 
-            be invisible by default, but can be set visible and set to AGND, DGND ...etc.
-        
-* (10) Part meta-data.
-    + (i) Description field: describe the component, free-form (no rules)
-    + (iv) Keywords: Choose the keywords (space separated) that will 
-        help you find the components from the library chooser.
+* (9) Default Symbol Fields
+    + Value: The name of the symbol 
+        - Required: Follow symbol naming conventions. 
+            - In schematic, gets replaced by the component value with units.
+            - For voltage sources it will be replaced with +5V, +1.8V ...etc, 
+                for gnd it will be invisible by default, but can be set 
+                visible and set to AGND, DGND ...etc.
+    + Reference Designator
+        - For discrete components: Use designator names from EE standards.
+        - For power and graphical symbols: Use #PWR and #SYM respectively.
 
-* (13) Power-Flag Symbols (note differences)
-    + (ii) Contain explicitly one pin (invisible) set to Power Output (not power-input, ERC warnings)
+    Also, do not define a component properties as "power symbol" this locks the
+    value field and limits component re-use.
+    
+* (10) Part meta-data.
+    + Description field: describe the component, free-form (no rules)
+    + Keywords field: Choose the keywords (space separated) that will help you 
+        find the components easily from the library chooser.
+
+* (13) Power Symbols (V+, GND ...etc) 
+    + Required: Contain pin set to Power Output (for ERC check)
 
 ## 5. Footprint Library Naming Conventions (Land Pattern Naming Conventions)
 ---

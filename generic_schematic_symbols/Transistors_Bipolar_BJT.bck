@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NPN
+D NPN Bipolar Junction Transistor, BJT
+K Bipolar Junction Transistor NPN BJT
+$ENDCMP
+#
+$CMP PNP
+D PNP Bipolar Junction Transistor, BJT
+K Bipolar Junction Transistor PNP BJT
+$ENDCMP
+#
+$CMP PNP-Split-COLL
+D PNP Bipolar Junction Transistor BJT with Split Collector
+K PNP Bipolar Junction Transistor BJT Split Collector
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NCH-ENH-3TERM
+D N Channel 3 Terminal (Bulk-tied) Enhancement Mode MOSFET
+K Q M N Channel Enhancement MOSFET Transistor 
+$ENDCMP
+#
+$CMP NCH-ENH-4TERM
+D N Channel 4 Terminal Enhancement Mode MOSFET
+K Q M N Channel Enhancement MOSFET Transistor 
+$ENDCMP
+#
+$CMP PCH-ENH-3TERM
+D P Channel 3 Terminal (Bulk-tied) Enhancement Mode MOSFET
+K Q M P Channel Enhancement MOSFET Transistor
+$ENDCMP
+#
+$CMP PCH-ENH-4TERM
+D P Channel 4 Terminal Enhancement Mode MOSFET
+K Q M P Channel Enhancement MOSFET Transistor 
+$ENDCMP
+#
+#End Doc Library

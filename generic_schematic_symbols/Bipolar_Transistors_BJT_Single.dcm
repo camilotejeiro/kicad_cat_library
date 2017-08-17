@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP NPN
-D NPN Bipolar Junction Transistor, BJT
-K Bipolar Junction Transistor NPN BJT
-$ENDCMP
-#
-#End Doc Library
