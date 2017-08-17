@@ -179,8 +179,7 @@ plus KiCad Eeschema only has support for imperial units.
     + Symbol origin
         - Recommended: Center of symbol strongly recommended 
             (but not required). For complex symbols other constraints take
-            precedence 
-            Other constraints (e.g. pin placement have precedence)
+            precedence.
     + Symbol body line with
         - Required: 10 mils  
     + Symbol standard type
