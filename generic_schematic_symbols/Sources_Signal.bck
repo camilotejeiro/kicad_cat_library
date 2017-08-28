@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP GEN-IND-AC
+D Generalized Independent AC Signal Source
+K V I AC Source Signal
+$ENDCMP
+#
 $CMP I-IND-DC
 D Inependent DC Current Signal Source/Sink
 K I Current Source Sink DC Power Signal

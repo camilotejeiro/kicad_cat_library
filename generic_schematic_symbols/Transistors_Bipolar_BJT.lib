@@ -8,6 +8,7 @@ F0 "Q" 100 75 50 H V L BNN
 F1 "NPN" 100 -75 50 H V L TNN
 F2 "" 150 100 50 H V C CNN
 F3 "" -50 0 50 H V C CNN
+F4 "c,b,e" 125 0 50 H I L CNN "Spice_Node_Sequence"
 DRAW
 C 10 0 108 0 1 10 N
 P 2 0 1 10 -50 -70 -50 70 N
@@ -28,6 +29,7 @@ F0 "Q" 100 75 50 H V L BNN
 F1 "PNP" 100 -75 50 H V L TNN
 F2 "" 150 100 50 H V C CNN
 F3 "" -50 0 50 H V C CNN
+F4 "c,b,e" 125 0 50 H I L CNN "Spice_Node_Sequence"
 DRAW
 C 10 0 108 0 1 10 N
 P 2 0 1 10 -50 -75 -50 75 N
